@@ -2,10 +2,8 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AyuTok - Free Video App</title>
     <style>
-        /* यहाँ डिज़ाइन है (CSS) */
         body { font-family: sans-serif; text-align: center; background-color: #121212; color: white; margin: 0; padding: 20px; }
         #player-container { margin-top: 20px; }
         input { width: 80%; padding: 10px; border-radius: 5px; border: none; }
@@ -26,10 +24,8 @@
     </div>
 
     <script>
-        // यहाँ काम करने वाला कोड है (JavaScript)
         function loadVideo() {
             let link = document.getElementById("videoLink").value;
-            // यह YouTube लिंक से ID निकालता है
             let videoId = "";
             if (link.includes("v=")) {
                 videoId = link.split('v=')[1].substring(0, 11);
